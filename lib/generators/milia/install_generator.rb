@@ -236,7 +236,7 @@ private
 
  def snippet_home_ctlr_header
    <<-'RUBY4'
-  skip_before_action :authenticate_tenant!, :only => [ :index ]
+  skip_before_action :authenticate_tenant!, :only => [ :index ], raise: false
 
    RUBY4
  end
